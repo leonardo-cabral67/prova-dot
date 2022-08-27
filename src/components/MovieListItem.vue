@@ -15,6 +15,7 @@
     </header>
     <p class="listItem__average">Nota: {{ item.vote_average }}</p>
     <p class="listItem__price">R$ 79,99</p>
+    <button @click="buyMovie(item)">Comprar</button>
   </li>
 </template>
 
@@ -23,8 +24,13 @@ import { useStore } from "vuex";
 import { computed } from "vue";
 
 const store = useStore();
+const cartList = store.state.cart.cartList;
 const moviesList = computed(() => store.state.moviesList.moviesList);
 store.dispatch("moviesList/loadMoviesList");
+const buyMovie = (item) => {
+  store.commit("cart/pushIdToCartList", item);
+  console.log("cart - ", cartList);
+};
 </script>
 
 <style>
