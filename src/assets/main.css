@@ -1,0 +1,18 @@
+@import "./reset.css";
+
+:root {
+  --color-main: #8dd7cf;
+  --color-button: #6558f5;
+  --color-button-hover: #2210f0;
+  --color-yellow: #fbe192;
+}
+
+button {
+  background: none;
+  color: white;
+  background-color: var(--color-button);
+}
+
+button:hover {
+  background-color: var(--color-button-hover);
+}
