@@ -7,10 +7,14 @@
   --color-yellow: #fbe192;
 }
 
+body {
+  margin-bottom: 90px;
+}
 button {
   background: none;
   color: white;
   background-color: var(--color-button);
+  cursor: pointer;
 }
 
 button:hover {

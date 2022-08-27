@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="listMovies">
     <MovieListItem />
   </ul>
 </template>
@@ -8,4 +8,15 @@
 import MovieListItem from "./MovieListItem.vue";
 </script>
 
-<style></style>
+<style>
+.listMovies {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* @media */
+</style>

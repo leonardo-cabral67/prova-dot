@@ -1,6 +1,9 @@
 <template>
   <Header />
-  <ListOfMovies />
+  <div class="app">
+    <ListOfMovies />
+    <Cart />
+  </div>
 </template>
 
 <script setup>
@@ -12,12 +15,15 @@ import Header from "./components/Header.vue";
 import Cart from "./components/Cart.vue";
 
 const store = useStore();
-const teste = computed(() => store.state.moviesList.teste);
 </script>
 
 <style>
-div {
+.app {
+  overflow-x: hidden;
   display: grid;
-  grid-template-columns: 100px, 200px;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
 }
 </style>

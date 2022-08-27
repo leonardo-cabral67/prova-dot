@@ -19,7 +19,8 @@ const actions = {
         console.log(res.data.results);
         commit("SET_MOVIES_LIST", res.data.results);
         console.log(res.data);
-      });
+      })
+      .catch((err) => console.log("erro - ", err));
   },
 };
 
