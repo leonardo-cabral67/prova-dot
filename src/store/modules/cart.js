@@ -1,10 +1,11 @@
 const state = {
   cartList: [],
+  cartOpen: false,
 };
 
 const mutations = {
   PUSH_MOVIE_TO_CART(state, { movie, quantity }) {
-    let cartItem = state.cartList.find((item) => item.movie.id === movie.id);
+    const cartItem = state.cartList.find((item) => item.movie.id === movie.id);
     if (cartItem) {
       cartItem.quantity += quantity;
       cartItem.movie.popularity *= cartItem.quantity;
@@ -17,10 +18,21 @@ const mutations = {
     state.cartList = [];
   },
 
+  INCREASE_QUANTITY(state, movie) {
+    const cartItem = state.cartList.find((item) =>
+      item.movie.id === movie.movie.id ? (item.quantity += quantity) : false
+    );
+  },
+
   DELETE_CART_ITEM(state, cartItem) {
     const newCart = state.cartList.filter((item) => item.movie.id !== cartItem);
     console.log(newCart);
     state.cartList = newCart;
+  },
+
+  OPEN_CART(state) {
+    console.log(state.cartOpen);
+    state.cartOpen = !state.cartOpen;
   },
 };
 
@@ -36,6 +48,13 @@ const actions = {
   drainOutCart: ({ commit }) => {
     commit("DRAIN_OUT_CART");
   },
+  increaseQuantity: ({ commit }, quantity) => {
+    commit("INCREASE_QUANTITY", quantity);
+  },
+
+  openCart: ({ commit }) => {
+    commit("OPEN_CART");
+  },
 };
 
 const getters = {
@@ -44,6 +63,10 @@ const getters = {
       return acumulator + value.movie.popularity;
     }, 0);
     return total;
+  },
+
+  cartLength(state) {
+    return state.cartList.length;
   },
 };
 

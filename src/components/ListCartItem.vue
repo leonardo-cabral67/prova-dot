@@ -23,7 +23,9 @@ import { useStore } from "vuex";
 import { computed, ref } from "vue";
 const store = useStore();
 
-const excluir = (id) => store.dispatch("cart/deleteCartItem", id);
+const excluir = (movie) => store.dispatch("cart/deleteCartItem", movie);
+const increaseButton = (quantity) =>
+  store.dispatch("cart/INCREASE_QUANTITY", quantity);
 
 const cartList = computed(() => store.state.cart.cartList);
 const total = computed(() => {});
@@ -33,7 +35,7 @@ const total = computed(() => {});
 .movieContainer,
 .cartItem {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
   gap: 20px;
 }
@@ -45,17 +47,33 @@ const total = computed(() => {});
 
 .movieInfos {
   display: flex;
-  flex-flow: row nowrap;
-  gap: 20px;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+.movieInfos h3 {
+  color: #007;
+}
+
+.movieInfos p {
+  font-weight: 700;
+  width: 170px;
+  color: var(--color-main);
 }
 
 .movieInfos h4 {
-  max-width: 15ch;
+  max-width: 10ch;
+  min-width: 90px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 200px;
   font-size: 16px;
   font-weight: 700;
+}
+
+@media (min-width: 767px) {
+  .movieInfos {
+    flex-flow: column;
+  }
 }
 </style>

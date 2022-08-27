@@ -20,7 +20,7 @@
       <img src="../assets/icons/black-star.png" alt="ícone de estrela" />
       <p>{{ item.vote_average.toFixed(1) }}</p>
     </div>
-    <p class="listItem__price">{{ item.vote_average * 10 }}</p>
+    <p class="listItem__price">R$ {{ item.vote_average * 10 }}</p>
     <button @click="buyMovie(item)" class="listItem__button">adicionar</button>
   </li>
 </template>

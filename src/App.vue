@@ -26,4 +26,11 @@ const store = useStore();
   align-content: center;
   width: 100%;
 }
+
+@media (max-width: 767px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+}
 </style>

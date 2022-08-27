@@ -19,15 +19,22 @@
         <button class="buttons buttons__container--heart">
           <i class="fa-solid fa-heart fa-2x"></i>
         </button>
-        <button class="buttons buttons__container--cart">
+        <button class="buttons buttons__container--cart" @click="cartOpen">
           <i class="fa-solid fa-cart-shopping fa-2x"></i>
+          <p class="cartLength">{{ cartLength }}</p>
         </button>
       </div>
     </div>
   </header>
 </template>
 
-<script setup></script>
+<script setup>
+import { computed } from "vue";
+import { useStore } from "vuex";
+const store = useStore();
+const cartOpen = () => store.dispatch("cart/openCart");
+const cartLength = computed(() => store.getters["cart/cartLength"]);
+</script>
 
 <style>
 .icone__logo {
@@ -52,7 +59,6 @@
   width: 100%;
   height: 60px;
   padding: 30px;
-  /* margin-bottom: 60px; */
 
   display: flex;
   justify-content: space-around;
@@ -93,6 +99,9 @@
 .buttons__container button {
   background: none;
 }
+.buttons__container--cart {
+  position: relative;
+}
 .buttons__container button:hover {
   background: none;
 }
@@ -101,10 +110,23 @@
   cursor: pointer;
 }
 
+.cartLength {
+  position: relative;
+  top: -45px;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  background: yellow;
+  color: black;
+  border-radius: 50%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .fa-heart:hover {
   color: #f00;
 }
-
 .fa-cart-shopping:hover {
   color: grey;
 }
