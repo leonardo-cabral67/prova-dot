@@ -26,12 +26,10 @@ const mutations = {
 
   DELETE_CART_ITEM(state, cartItem) {
     const newCart = state.cartList.filter((item) => item.movie.id !== cartItem);
-    console.log(newCart);
     state.cartList = newCart;
   },
 
   OPEN_CART(state) {
-    console.log(state.cartOpen);
     state.cartOpen = !state.cartOpen;
   },
 };

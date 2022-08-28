@@ -46,7 +46,7 @@ const openCart = () => store.dispatch("cart/openCart");
 .sideBar {
   display: flex;
   flex-direction: column;
-  justify-content: ;
+  /* justify-content: center; */
   width: 350px;
   border: 1px solid rgba(0, 0, 0, 0.4);
   height: 550px;

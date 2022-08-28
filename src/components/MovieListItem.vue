@@ -38,7 +38,6 @@ const buyMovie = (item) => {
     movie: item,
     quantity: 1,
   });
-  console.log("cart - ", cartList);
 };
 </script>
 

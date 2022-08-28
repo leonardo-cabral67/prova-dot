@@ -16,9 +16,7 @@ const actions = {
     api
       .get("3/trending/movie/week?api_key=60a9823609da5d74a6f269fe90d88edf")
       .then((res) => {
-        console.log(res.data.results);
         commit("SET_MOVIES_LIST", res.data.results);
-        console.log(res.data);
       })
       .catch((err) => console.log("erro - ", err));
   },
