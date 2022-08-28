@@ -41,7 +41,7 @@ const openCart = () => store.dispatch("cart/openCart");
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 450px;
+  width: 350px;
   border: 1px solid rgba(0, 0, 0, 0.4);
   height: 550px;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.4);
