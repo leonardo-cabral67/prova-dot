@@ -6,7 +6,9 @@
         <h1>Meu Carrinho</h1>
         <p @click="drainOutCart">Esvaziar</p>
       </header>
-      <ListCartItem />
+      <div class="items">
+        <ListCartItem />
+      </div>
     </ul>
     <footer class="total">
       <div class="total__info">
@@ -37,10 +39,14 @@ const openCart = () => store.dispatch("cart/openCart");
   border-radius: 40%;
 }
 
+.items {
+  min-height: 400px;
+}
+
 .sideBar {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: ;
   width: 350px;
   border: 1px solid rgba(0, 0, 0, 0.4);
   height: 550px;
