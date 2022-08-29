@@ -1,35 +1,21 @@
 # prova-dot
 
-This template should help get you started developing with Vue 3 in Vite.
+## Deploy feito com vercel
+Para Acessar a aplicação clique [aqui]("https://prova-dot-leonardo-cabral.vercel.app")
 
-## Recommended IDE Setup
+## Dependências: 
+* Axios
+* VueX
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## O que aprendi com esse projeto
+* Vue js 3 - component API
+* Vuex 
 
-## Customize configuration
+### Ps:
+- Gostei demais de ter trabalhado com Vue, nunca tinha usado antes, apenas react e gostei bastante.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+** Sobre o que é o projeto: 
+Trate-se de uma loja de filmes em que os filmes podem ser adicionados ao carrinho, favoritados e podemos também finalizar a compra.
 
-## Project Setup
 
-```sh
-npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
