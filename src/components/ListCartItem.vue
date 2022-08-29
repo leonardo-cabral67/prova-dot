@@ -8,7 +8,7 @@
       <figcaption class="movieInfos">
         <h4>{{ item.movie.title }}</h4>
         <h3>{{ item.quantity }}</h3>
-        <p>R${{ (item.movie.popularity / 10).toFixed(2) }}</p>
+        <p>R${{ (item.movie.popularity.toFixed(2) / 10).toFixed(1) }}</p>
       </figcaption>
 
       <button @click="excluir(item.movie.id)">
