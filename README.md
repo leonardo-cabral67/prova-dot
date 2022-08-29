@@ -32,6 +32,6 @@ Trate-se de uma loja online de filmes.
 
 ## Autor
 ### Leonardo cabral
-Sou um desenvolvedor front end, com vários conhecimentos. Entre eles Estão: React, Redux, Context API, Vue, Javascript, Typescript, POO, Vuex consumo de APIs REST, Styled-components, Chakra UI, HTML, CSS.
+Sou um desenvolvedor front end, com vários conhecimentos. Entre eles Estão: React, Redux, Context API, Vue, Javascript, Typescript, POO, Vuex, consumo de APIs REST, Styled-components, Chakra UI, HTML, CSS.
 ### [Linkedin](https://linkedin.com/in/leonardo-cabral67)
 ### [Portfólio](https://portfolio-pessoal-leonardo-cabral67.vercel.app/)
