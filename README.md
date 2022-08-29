@@ -22,3 +22,8 @@ Trate-se de uma loja de filmes em que os filmes podem ser adicionados ao carrinh
  ![Ipad](https://github.com/leonardo-cabral67/prova-dot/blob/main/src/assets/layout/ipad.png)
  ![Notebook](https://github.com/leonardo-cabral67/prova-dot/blob/main/src/assets/layout/notebook.png)
 
+## Autor
+### Leonardo cabral
+Sou um desenvolvedor front end, com vários conhecimentos. Entre eles Estão: React, Redux, Context API, Vue, Javascript, Typescript, POO, Vuex consumo de APIs REST, Styled-components, Chakra UI, HTML, CSS.
+### Meu Linkedin: [Linkedin](https://linkedin.com/in/leonardo-cabral67)
+### Meu portfólio: [Portfólio](https://portfolio-pessoal-leonardo-cabral67.vercel.app/)
