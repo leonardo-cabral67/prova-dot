@@ -1,7 +1,7 @@
 # prova-dot
 
 ## Deploy feito com vercel
-Para Acessar a aplicação clique [aqui]("https://prova-dot-leonardo-cabral.vercel.app")
+Para Acessar a aplicação clique [aqui](https://prova-dot-leonardo-cabral.vercel.app)
 
 ## Dependências: 
 * Axios
@@ -17,5 +17,8 @@ Para Acessar a aplicação clique [aqui]("https://prova-dot-leonardo-cabral.verc
 ** Sobre o que é o projeto: 
 Trate-se de uma loja de filmes em que os filmes podem ser adicionados ao carrinho, favoritados e podemos também finalizar a compra.
 
-
+## Layout
+ ![mobiel](https://github.com/leonardo-cabral67/prova-dot/blob/main/src/assets/layout/mobile.png)
+ ![Ipad](https://github.com/leonardo-cabral67/prova-dot/blob/main/src/assets/layout/ipad.png)
+ ![Notebook](https://github.com/leonardo-cabral67/prova-dot/blob/main/src/assets/layout/notebook.png)
 
